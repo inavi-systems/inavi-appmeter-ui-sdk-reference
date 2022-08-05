@@ -83,6 +83,8 @@ $dokka.location:com.inavi.appmeter.ui.exception/AuthException///PointingToDeclar
 $dokka.location:com.inavi.appmeter.ui.exception/AuthException/AuthException/#kotlin.Int/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-auth-exception/-auth-exception.html
 $dokka.location:com.inavi.appmeter.ui.exception/DuplicateException///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-duplicate-exception/index.html
 $dokka.location:com.inavi.appmeter.ui.exception/DuplicateException/DuplicateException/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-duplicate-exception/-duplicate-exception.html
+$dokka.location:com.inavi.appmeter.ui.exception/OtherException///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-other-exception/index.html
+$dokka.location:com.inavi.appmeter.ui.exception/OtherException/OtherException/#kotlin.String/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-other-exception/-other-exception.html
 $dokka.location:com.inavi.appmeter.ui.exception/PaymentTerminalException///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-payment-terminal-exception/index.html
 $dokka.location:com.inavi.appmeter.ui.exception/PaymentTerminalException/PaymentTerminalException/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-payment-terminal-exception/-payment-terminal-exception.html
 $dokka.location:com.inavi.appmeter.ui.exception/ProfileException///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.exception/-profile-exception/index.html
@@ -160,10 +162,12 @@ $dokka.location:com.inavi.appmeter.ui.model/TollgateInfo/getTollFee/#/PointingTo
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/index.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/TripInfo/#kotlin.String#kotlin.Double#com.inavi.appmeter.ui.model.LocationInfo#kotlin.Int/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/-trip-info.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/getBasicFare/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-basic-fare.html
+$dokka.location:com.inavi.appmeter.ui.model/TripInfo/getDrivingDist/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-driving-dist.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/getEmptyCarDist/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-empty-car-dist.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/getEndLocation/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-end-location.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/getId/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-id.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/getStartLocation/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-start-location.html
+$dokka.location:com.inavi.appmeter.ui.model/TripInfo/getTotalFare/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/get-total-fare.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/isArrival/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/is-arrival.html
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/isPaymentComplete/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/is-payment-complete.html
 $dokka.location:com.inavi.appmeter.ui.model/VehicleInfo///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-vehicle-info/index.html
