@@ -6,10 +6,18 @@
     <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../../styles/style.css" rel="Stylesheet">
 <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-1.0.6    </div>
+1.0.7    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -43,10 +52,10 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="Inavi App Meter UI SDK::com.inavi.appmeter.ui.event/AppEvent.ExitAppMeter///PointingToDeclaration//614265025">
-  <div class="breadcrumbs"><a href="../../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../../index.html">com.inavi.appmeter.ui.event</a><span class="delimiter">/</span><a href="../index.html">AppEvent</a><span class="delimiter">/</span><a href="index.html">ExitAppMeter</a></div>
+  <div class="breadcrumbs"><a href="../../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../../index.html">com.inavi.appmeter.ui.event</a><span class="delimiter">/</span><a href="../index.html">AppEvent</a><span class="delimiter">/</span><span class="current">ExitAppMeter</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Exit</span><wbr></wbr><span>App</span><wbr></wbr><span><span>Meter</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="index.html">ExitAppMeter</a><span class="token keyword"> implements </span><a href="../index.html">AppEvent</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">앱미터 종료 요청 이벤트 클래스.</p><p class="paragraph">해당 이벤트 호출 시 주행정보를 초기화하고 앱미터를 완전히 종료합니다.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="index.html">ExitAppMeter</a><span class="token keyword"> implements </span><a href="../index.html">AppEvent</a></div><p class="paragraph">앱미터 종료 요청 이벤트 클래스.</p><p class="paragraph">해당 이벤트 호출 시 주행정보를 초기화하고 앱미터를 완전히 종료합니다.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button></div>
@@ -62,7 +71,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="index.html">AppEvent.ExitAppMeter</a> <a href="-app-event.-exit-app-meter.html"><span class="token function">AppEvent.ExitAppMeter</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="index.html">AppEvent.ExitAppMeter</a> <a href="-app-event.-exit-app-meter.html"><span class="token function">AppEvent.ExitAppMeter</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>

@@ -6,10 +6,18 @@
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-1.0.6    </div>
+1.0.7    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -43,10 +52,10 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="Inavi App Meter UI SDK::com.inavi.appmeter.ui.model/DailyStatus///PointingToDeclaration//614265025">
-  <div class="breadcrumbs"><a href="../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../index.html">com.inavi.appmeter.ui.model</a><span class="delimiter">/</span><a href="index.html">DailyStatus</a></div>
+  <div class="breadcrumbs"><a href="../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../index.html">com.inavi.appmeter.ui.model</a><span class="delimiter">/</span><span class="current">DailyStatus</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Daily</span><wbr></wbr><span><span>Status</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="index.html">DailyStatus</a><span class="token keyword"> implements </span><a href="https://developer.android.com/reference/kotlin/java/io/Serializable.html">Serializable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">사용자의 일일 운행현황 클래스.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="index.html">DailyStatus</a><span class="token keyword"> implements </span><a href="https://developer.android.com/reference/kotlin/java/io/Serializable.html">Serializable</a></div><p class="paragraph">사용자의 일일 운행현황 클래스.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
@@ -62,7 +71,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-driving-dist.html"><span class="token function">getDrivingDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">영업거리 (미터 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-driving-dist.html"><span class="token function">getDrivingDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">영업거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -77,7 +86,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-driving-time.html"><span class="token function">getDrivingTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">영업시간 (초 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-driving-time.html"><span class="token function">getDrivingTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">영업시간 (초 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -92,7 +101,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-income-card.html"><span class="token function">getIncomeCard</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">카드 수입금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-income-card.html"><span class="token function">getIncomeCard</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">카드 수입금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -107,7 +116,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-income-cash.html"><span class="token function">getIncomeCash</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">현금 수입금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-income-cash.html"><span class="token function">getIncomeCash</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">현금 수입금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -122,7 +131,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-service-dist.html"><span class="token function">getServiceDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">총 운행거리 (미터 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-service-dist.html"><span class="token function">getServiceDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">총 운행거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -137,7 +146,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-service-time.html"><span class="token function">getServiceTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">총 운행시간 (초 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-service-time.html"><span class="token function">getServiceTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">총 운행시간 (초 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -154,7 +163,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-1080695430%2FProperties%2F614265025" anchor-label="drivingDist" id="-1080695430%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#-1080695430%2FProperties%2F614265025">drivingDist</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1080695430%2FProperties%2F614265025" anchor-label="drivingDist" id="-1080695430%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">영업거리 (미터 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-1080695430%2FProperties%2F614265025" anchor-label="drivingDist" id="-1080695430%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#-1080695430%2FProperties%2F614265025">drivingDist</a></div><div class="brief "><a data-name="-1080695430%2FProperties%2F614265025" anchor-label="drivingDist" id="-1080695430%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">영업거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -169,7 +178,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-521016781%2FProperties%2F614265025" anchor-label="drivingTime" id="-521016781%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-521016781%2FProperties%2F614265025">drivingTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-521016781%2FProperties%2F614265025" anchor-label="drivingTime" id="-521016781%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">영업시간 (초 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-521016781%2FProperties%2F614265025" anchor-label="drivingTime" id="-521016781%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-521016781%2FProperties%2F614265025">drivingTime</a></div><div class="brief "><a data-name="-521016781%2FProperties%2F614265025" anchor-label="drivingTime" id="-521016781%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">영업시간 (초 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -184,7 +193,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-2043290342%2FProperties%2F614265025" anchor-label="incomeCard" id="-2043290342%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-2043290342%2FProperties%2F614265025">incomeCard</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2043290342%2FProperties%2F614265025" anchor-label="incomeCard" id="-2043290342%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">카드 수입금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-2043290342%2FProperties%2F614265025" anchor-label="incomeCard" id="-2043290342%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-2043290342%2FProperties%2F614265025">incomeCard</a></div><div class="brief "><a data-name="-2043290342%2FProperties%2F614265025" anchor-label="incomeCard" id="-2043290342%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">카드 수입금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -199,7 +208,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-957597097%2FProperties%2F614265025" anchor-label="incomeCash" id="-957597097%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-957597097%2FProperties%2F614265025">incomeCash</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-957597097%2FProperties%2F614265025" anchor-label="incomeCash" id="-957597097%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">현금 수입금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-957597097%2FProperties%2F614265025" anchor-label="incomeCash" id="-957597097%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-957597097%2FProperties%2F614265025">incomeCash</a></div><div class="brief "><a data-name="-957597097%2FProperties%2F614265025" anchor-label="incomeCash" id="-957597097%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">현금 수입금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -214,7 +223,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-1794348724%2FProperties%2F614265025" anchor-label="serviceDist" id="-1794348724%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#-1794348724%2FProperties%2F614265025">serviceDist</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1794348724%2FProperties%2F614265025" anchor-label="serviceDist" id="-1794348724%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">총 운행거리 (미터 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-1794348724%2FProperties%2F614265025" anchor-label="serviceDist" id="-1794348724%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#-1794348724%2FProperties%2F614265025">serviceDist</a></div><div class="brief "><a data-name="-1794348724%2FProperties%2F614265025" anchor-label="serviceDist" id="-1794348724%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">총 운행거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -229,7 +238,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-1234670075%2FProperties%2F614265025" anchor-label="serviceTime" id="-1234670075%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-1234670075%2FProperties%2F614265025">serviceTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1234670075%2FProperties%2F614265025" anchor-label="serviceTime" id="-1234670075%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">총 운행시간 (초 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kiataxi:dokkaHtml/release"><a data-name="-1234670075%2FProperties%2F614265025" anchor-label="serviceTime" id="-1234670075%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-1234670075%2FProperties%2F614265025">serviceTime</a></div><div class="brief "><a data-name="-1234670075%2FProperties%2F614265025" anchor-label="serviceTime" id="-1234670075%2FProperties%2F614265025" data-filterable-set=":kiataxi:dokkaHtml/release"></a><p class="paragraph">총 운행시간 (초 단위).</p></div></div></div>
               </div>
             </div>
           </div>
