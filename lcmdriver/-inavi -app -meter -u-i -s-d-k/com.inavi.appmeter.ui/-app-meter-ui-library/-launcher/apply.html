@@ -6,10 +6,18 @@
     <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../../styles/style.css" rel="Stylesheet">
 <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-1.0.0-rc05    </div>
+1.1.1    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -43,11 +52,11 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="Inavi App Meter UI SDK::com.inavi.appmeter.ui/AppMeterUiLibrary.Launcher/apply/#com.inavi.appmeter.ui.model.DriverInfo#com.inavi.appmeter.ui.model.ServiceInfo#com.inavi.appmeter.ui.model.VehicleInfo/PointingToDeclaration//-1446683490">
-  <div class="breadcrumbs"><a href="../../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../../index.html">com.inavi.appmeter.ui</a><span class="delimiter">/</span><a href="../index.html">AppMeterUiLibrary</a><span class="delimiter">/</span><a href="index.html">Launcher</a><span class="delimiter">/</span><a href="apply.html">apply</a></div>
+  <div class="breadcrumbs"><a href="../../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../../index.html">com.inavi.appmeter.ui</a><span class="delimiter">/</span><a href="../index.html">AppMeterUiLibrary</a><span class="delimiter">/</span><a href="index.html">Launcher</a><span class="delimiter">/</span><span class="current">apply</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>apply</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="index.html">AppMeterUiLibrary.Launcher</a> <a href="apply.html"><span class="token function">apply</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword"></span><a href="../../../com.inavi.appmeter.ui.model/-driver-info/index.html">DriverInfo</a> driverInfo<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword"></span><a href="../../../com.inavi.appmeter.ui.model/-service-info/index.html">ServiceInfo</a> serviceInfo<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword"></span><a href="../../../com.inavi.appmeter.ui.model/-vehicle-info/index.html">VehicleInfo</a> vehicleInfo</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">앱미터 실행에 필요한 필수 정보를 설정합니다.</p><p class="paragraph">해당 값은 앱미터 실행 전에 반드시 호출되어야 합니다.</p><h4 class="">Return</h4><p class="paragraph">해당 메서드를 호출한 <a href="index.html">Launcher</a> 인스턴스 자신.</p><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>driver</span><wbr></wbr><span><span>Info</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">앱미터 사용자 정보.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>service</span><wbr></wbr><span><span>Info</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">앱미터 서비스 정보.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>vehicle</span><wbr></wbr><span><span>Info</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">앱미터 차량 정보.</p></div></div></div></div></div></div></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="index.html">AppMeterUiLibrary.Launcher</a> <a href="apply.html"><span class="token function">apply</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="../../../com.inavi.appmeter.ui.model/-driver-info/index.html">DriverInfo</a> driverInfo<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="../../../com.inavi.appmeter.ui.model/-service-info/index.html">ServiceInfo</a> serviceInfo<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="../../../com.inavi.appmeter.ui.model/-vehicle-info/index.html">VehicleInfo</a> vehicleInfo</span></span><span class="token punctuation">)</span></div><p class="paragraph">앱미터 실행에 필요한 필수 정보를 설정합니다.</p><p class="paragraph">해당 값은 앱미터 실행 전에 반드시 호출되어야 합니다.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">해당 메서드를 호출한 <a href="index.html">Launcher</a> 인스턴스 자신.</p></span><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>driver</span><wbr></wbr><span><span>Info</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">앱미터 사용자 정보.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>service</span><wbr></wbr><span><span>Info</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">앱미터 서비스 정보.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>vehicle</span><wbr></wbr><span><span>Info</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">앱미터 차량 정보.</p></div></div></div></div></div></div></div></div></div>
 </div>
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span

@@ -6,10 +6,18 @@
     <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../../styles/style.css" rel="Stylesheet">
 <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-1.0.0-rc05    </div>
+1.1.1    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -43,31 +52,16 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageIds="Inavi App Meter UI SDK::com.inavi.appmeter.ui.model/PaymentInfo.Driving///PointingToDeclaration//-1446683490">
-  <div class="breadcrumbs"><a href="../../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../../index.html">com.inavi.appmeter.ui.model</a><span class="delimiter">/</span><a href="../index.html">PaymentInfo</a><span class="delimiter">/</span><a href="index.html">Driving</a></div>
+  <div class="breadcrumbs"><a href="../../../../index.html">Inavi App Meter UI SDK</a><span class="delimiter">/</span><a href="../../index.html">com.inavi.appmeter.ui.model</a><span class="delimiter">/</span><a href="../index.html">PaymentInfo</a><span class="delimiter">/</span><span class="current">Driving</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Driving</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="index.html">Driving</a><span class="token keyword"> extends </span><a href="../index.html">PaymentInfo</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">주행 후 지불 정보 클래스.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="index.html">Driving</a><span class="token keyword"> extends </span><a href="../index.html">PaymentInfo</a></div><p class="paragraph">주행 후 지불 정보 클래스.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
     <div class="tabs-section-body">
       <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="-1345726139%2FFunctions%2F-1446683490" anchor-label="getArrivalTime" id="-1345726139%2FFunctions%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-arrival-time.html"><span>get</span><wbr></wbr><span>Arrival</span><wbr></wbr><span><span>Time</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1345726139%2FFunctions%2F-1446683490"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a> <a href="get-arrival-time.html"><span class="token function">getArrivalTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">도착 시간 (Unix timestamp, KST).</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1340506513%2FFunctions%2F-1446683490" anchor-label="getBasicFare" id="-1340506513%2FFunctions%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
+      <div class="table" data-togglable="Functions"><a data-name="-1340506513%2FFunctions%2F-1446683490" anchor-label="getBasicFare" id="-1340506513%2FFunctions%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
         <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
           <div class="main-subrow keyValue ">
             <div class=""><span class="inline-flex">
@@ -77,7 +71,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-basic-fare.html"><span class="token function">getBasicFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">기본 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-basic-fare.html"><span class="token function">getBasicFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">기본 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -92,7 +86,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-call-fee.html"><span class="token function">getCallFee</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">호출 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-call-fee.html"><span class="token function">getCallFee</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">호출 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -107,7 +101,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-distance-fare.html"><span class="token function">getDistanceFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">기본 요금을 제외한 거리 대비 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-distance-fare.html"><span class="token function">getDistanceFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">기본 요금을 제외한 거리 대비 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -122,7 +116,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-driving-dist.html"><span class="token function">getDrivingDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">주행 거리 (미터 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-driving-dist.html"><span class="token function">getDrivingDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">주행 거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -137,7 +131,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-driving-fare.html"><span class="token function">getDrivingFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">주행에 대한 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-driving-fare.html"><span class="token function">getDrivingFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">주행에 대한 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -152,7 +146,22 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-driving-time.html"><span class="token function">getDrivingTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">주행 시간 (초 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-driving-time.html"><span class="token function">getDrivingTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">주행 시간 (초 단위).</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1653675166%2FFunctions%2F-1446683490" anchor-label="getEmptyCarDist" id="-1653675166%2FFunctions%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-empty-car-dist.html"><span>get</span><wbr></wbr><span>Empty</span><wbr></wbr><span>Car</span><wbr></wbr><span><span>Dist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1653675166%2FFunctions%2F-1446683490"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="get-empty-car-dist.html"><span class="token function">getEmptyCarDist</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">빈차 상태에서 주행한 거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -167,7 +176,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="get-end-location.html"><span class="token function">getEndLocation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">도착지 위치 정보.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="get-end-location.html"><span class="token function">getEndLocation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">도착지 위치 정보.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -182,7 +191,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-passed-toll-count.html"><span class="token function">getPassedTollCount</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">통과한 톨게이트 개수.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-passed-toll-count.html"><span class="token function">getPassedTollCount</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">통과한 톨게이트 개수.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -197,22 +206,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="get-start-location.html"><span class="token function">getStartLocation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">출발지 위치 정보.</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-187969284%2FFunctions%2F-1446683490" anchor-label="getStartTime" id="-187969284%2FFunctions%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-start-time.html"><span>get</span><wbr></wbr><span>Start</span><wbr></wbr><span><span>Time</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-187969284%2FFunctions%2F-1446683490"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a> <a href="get-start-time.html"><span class="token function">getStartTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">주행 시작 시간 (Unix timestamp, KST).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="get-start-location.html"><span class="token function">getStartLocation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">출발지 위치 정보.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -227,7 +221,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-toll-fee.html"><span class="token function">getTollFee</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">통행 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-toll-fee.html"><span class="token function">getTollFee</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">통행 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -242,7 +236,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-total-fare.html"><span class="token function">getTotalFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">결제 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="get-total-fare.html"><span class="token function">getTotalFare</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">결제 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -257,7 +251,22 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-trip-id.html"><span class="token function">getTripId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">주행에 대한 고윳값.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="get-trip-id.html"><span class="token function">getTripId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">주행에 대한 고윳값.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1450438966%2FFunctions%2F-1446683490" anchor-label="isApplyCompoundRate" id="1450438966%2FFunctions%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-apply-compound-rate.html"><span>is</span><wbr></wbr><span>Apply</span><wbr></wbr><span>Compound</span><wbr></wbr><span><span>Rate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1450438966%2FFunctions%2F-1446683490"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-apply-compound-rate.html"><span class="token function">isApplyCompoundRate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">복합 할증 여부.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -272,7 +281,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-extra-charge-time.html"><span class="token function">isExtraChargeTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">심야 할증 여부.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-extra-charge-time.html"><span class="token function">isExtraChargeTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">심야 할증 여부.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -287,29 +296,14 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-out-of-main-district.html"><span class="token function">isOutOfMainDistrict</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">시계외 할증 여부.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-out-of-main-district.html"><span class="token function">isOutOfMainDistrict</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">시계외 할증 여부.</p></div></div></div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-1613551009%2FProperties%2F-1446683490" anchor-label="arrivalTime" id="-1613551009%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#-1613551009%2FProperties%2F-1446683490"><span>arrival</span><wbr></wbr><span><span>Time</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1613551009%2FProperties%2F-1446683490"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1613551009%2FProperties%2F-1446683490" anchor-label="arrivalTime" id="-1613551009%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a> <a href="index.html#-1613551009%2FProperties%2F-1446683490">arrivalTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1613551009%2FProperties%2F-1446683490" anchor-label="arrivalTime" id="-1613551009%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">도착 시간 (Unix timestamp, KST).</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-996651511%2FProperties%2F-1446683490" anchor-label="basicFare" id="-996651511%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
+      <div class="table" data-togglable="Properties"><a data-name="-996651511%2FProperties%2F-1446683490" anchor-label="basicFare" id="-996651511%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
         <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
           <div class="main-subrow keyValue ">
             <div class=""><span class="inline-flex">
@@ -319,7 +313,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-996651511%2FProperties%2F-1446683490" anchor-label="basicFare" id="-996651511%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-996651511%2FProperties%2F-1446683490">basicFare</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-996651511%2FProperties%2F-1446683490" anchor-label="basicFare" id="-996651511%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">기본 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-996651511%2FProperties%2F-1446683490" anchor-label="basicFare" id="-996651511%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-996651511%2FProperties%2F-1446683490">basicFare</a></div><div class="brief "><a data-name="-996651511%2FProperties%2F-1446683490" anchor-label="basicFare" id="-996651511%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">기본 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -334,7 +328,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-18447683%2FProperties%2F-1446683490" anchor-label="callFee" id="-18447683%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-18447683%2FProperties%2F-1446683490">callFee</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-18447683%2FProperties%2F-1446683490" anchor-label="callFee" id="-18447683%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">호출 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-18447683%2FProperties%2F-1446683490" anchor-label="callFee" id="-18447683%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-18447683%2FProperties%2F-1446683490">callFee</a></div><div class="brief "><a data-name="-18447683%2FProperties%2F-1446683490" anchor-label="callFee" id="-18447683%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">호출 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -349,7 +343,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1435641326%2FProperties%2F-1446683490" anchor-label="distanceFare" id="-1435641326%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-1435641326%2FProperties%2F-1446683490">distanceFare</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1435641326%2FProperties%2F-1446683490" anchor-label="distanceFare" id="-1435641326%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">기본 요금을 제외한 거리 대비 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1435641326%2FProperties%2F-1446683490" anchor-label="distanceFare" id="-1435641326%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-1435641326%2FProperties%2F-1446683490">distanceFare</a></div><div class="brief "><a data-name="-1435641326%2FProperties%2F-1446683490" anchor-label="distanceFare" id="-1435641326%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">기본 요금을 제외한 거리 대비 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -364,7 +358,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="990578840%2FProperties%2F-1446683490" anchor-label="drivingDist" id="990578840%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#990578840%2FProperties%2F-1446683490">drivingDist</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="990578840%2FProperties%2F-1446683490" anchor-label="drivingDist" id="990578840%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행 거리 (미터 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="990578840%2FProperties%2F-1446683490" anchor-label="drivingDist" id="990578840%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#990578840%2FProperties%2F-1446683490">drivingDist</a></div><div class="brief "><a data-name="990578840%2FProperties%2F-1446683490" anchor-label="drivingDist" id="990578840%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행 거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -379,7 +373,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1307203824%2FProperties%2F-1446683490" anchor-label="drivingFare" id="-1307203824%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-1307203824%2FProperties%2F-1446683490">drivingFare</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1307203824%2FProperties%2F-1446683490" anchor-label="drivingFare" id="-1307203824%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행에 대한 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1307203824%2FProperties%2F-1446683490" anchor-label="drivingFare" id="-1307203824%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-1307203824%2FProperties%2F-1446683490">drivingFare</a></div><div class="brief "><a data-name="-1307203824%2FProperties%2F-1446683490" anchor-label="drivingFare" id="-1307203824%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행에 대한 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -394,7 +388,22 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1550257489%2FProperties%2F-1446683490" anchor-label="drivingTime" id="1550257489%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#1550257489%2FProperties%2F-1446683490">drivingTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1550257489%2FProperties%2F-1446683490" anchor-label="drivingTime" id="1550257489%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행 시간 (초 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1550257489%2FProperties%2F-1446683490" anchor-label="drivingTime" id="1550257489%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#1550257489%2FProperties%2F-1446683490">drivingTime</a></div><div class="brief "><a data-name="1550257489%2FProperties%2F-1446683490" anchor-label="drivingTime" id="1550257489%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행 시간 (초 단위).</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1366311544%2FProperties%2F-1446683490" anchor-label="emptyCarDist" id="-1366311544%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-1366311544%2FProperties%2F-1446683490"><span>empty</span><wbr></wbr><span>Car</span><wbr></wbr><span><span>Dist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1366311544%2FProperties%2F-1446683490"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1366311544%2FProperties%2F-1446683490" anchor-label="emptyCarDist" id="-1366311544%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Double.html">Double</a> <a href="index.html#-1366311544%2FProperties%2F-1446683490">emptyCarDist</a></div><div class="brief "><a data-name="-1366311544%2FProperties%2F-1446683490" anchor-label="emptyCarDist" id="-1366311544%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">빈차 상태에서 주행한 거리 (미터 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -409,7 +418,22 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1385633365%2FProperties%2F-1446683490" anchor-label="endLocation" id="1385633365%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="index.html#1385633365%2FProperties%2F-1446683490">endLocation</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1385633365%2FProperties%2F-1446683490" anchor-label="endLocation" id="1385633365%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">도착지 위치 정보.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1385633365%2FProperties%2F-1446683490" anchor-label="endLocation" id="1385633365%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="index.html#1385633365%2FProperties%2F-1446683490">endLocation</a></div><div class="brief "><a data-name="1385633365%2FProperties%2F-1446683490" anchor-label="endLocation" id="1385633365%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">도착지 위치 정보.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1450438966%2FProperties%2F-1446683490" anchor-label="isApplyCompoundRate" id="1450438966%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
+        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-apply-compound-rate.html"><span>is</span><wbr></wbr><span>Apply</span><wbr></wbr><span>Compound</span><wbr></wbr><span><span>Rate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1450438966%2FProperties%2F-1446683490"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1450438966%2FProperties%2F-1446683490" anchor-label="isApplyCompoundRate" id="1450438966%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-apply-compound-rate.html">isApplyCompoundRate</a></div><div class="brief "><a data-name="1450438966%2FProperties%2F-1446683490" anchor-label="isApplyCompoundRate" id="1450438966%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">복합 할증 여부.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -424,7 +448,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-696996706%2FProperties%2F-1446683490" anchor-label="isExtraChargeTime" id="-696996706%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-extra-charge-time.html">isExtraChargeTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-696996706%2FProperties%2F-1446683490" anchor-label="isExtraChargeTime" id="-696996706%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">심야 할증 여부.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-696996706%2FProperties%2F-1446683490" anchor-label="isExtraChargeTime" id="-696996706%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-extra-charge-time.html">isExtraChargeTime</a></div><div class="brief "><a data-name="-696996706%2FProperties%2F-1446683490" anchor-label="isExtraChargeTime" id="-696996706%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">심야 할증 여부.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -439,7 +463,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="444863875%2FProperties%2F-1446683490" anchor-label="isOutOfMainDistrict" id="444863875%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-out-of-main-district.html">isOutOfMainDistrict</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="444863875%2FProperties%2F-1446683490" anchor-label="isOutOfMainDistrict" id="444863875%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">시계외 할증 여부.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="444863875%2FProperties%2F-1446683490" anchor-label="isOutOfMainDistrict" id="444863875%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> <a href="is-out-of-main-district.html">isOutOfMainDistrict</a></div><div class="brief "><a data-name="444863875%2FProperties%2F-1446683490" anchor-label="isOutOfMainDistrict" id="444863875%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">시계외 할증 여부.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -454,7 +478,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1601112193%2FProperties%2F-1446683490" anchor-label="passedTollCount" id="1601112193%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#1601112193%2FProperties%2F-1446683490">passedTollCount</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1601112193%2FProperties%2F-1446683490" anchor-label="passedTollCount" id="1601112193%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">통과한 톨게이트 개수.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="1601112193%2FProperties%2F-1446683490" anchor-label="passedTollCount" id="1601112193%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#1601112193%2FProperties%2F-1446683490">passedTollCount</a></div><div class="brief "><a data-name="1601112193%2FProperties%2F-1446683490" anchor-label="passedTollCount" id="1601112193%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">통과한 톨게이트 개수.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -469,22 +493,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="2104440238%2FProperties%2F-1446683490" anchor-label="startLocation" id="2104440238%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="index.html#2104440238%2FProperties%2F-1446683490">startLocation</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="2104440238%2FProperties%2F-1446683490" anchor-label="startLocation" id="2104440238%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">출발지 위치 정보.</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="155885718%2FProperties%2F-1446683490" anchor-label="startTime" id="155885718%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":lcmdriver:dokkaHtml/release" data-filterable-set=":lcmdriver:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#155885718%2FProperties%2F-1446683490"><span>start</span><wbr></wbr><span><span>Time</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="155885718%2FProperties%2F-1446683490"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="155885718%2FProperties%2F-1446683490" anchor-label="startTime" id="155885718%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Long.html">Long</a> <a href="index.html#155885718%2FProperties%2F-1446683490">startTime</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="155885718%2FProperties%2F-1446683490" anchor-label="startTime" id="155885718%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행 시작 시간 (Unix timestamp, KST).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="2104440238%2FProperties%2F-1446683490" anchor-label="startLocation" id="2104440238%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="../../-location-info/index.html">LocationInfo</a> <a href="index.html#2104440238%2FProperties%2F-1446683490">startLocation</a></div><div class="brief "><a data-name="2104440238%2FProperties%2F-1446683490" anchor-label="startLocation" id="2104440238%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">출발지 위치 정보.</p></div></div></div>
               </div>
             </div>
           </div>
@@ -499,7 +508,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="785757210%2FProperties%2F-1446683490" anchor-label="tollFee" id="785757210%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#785757210%2FProperties%2F-1446683490">tollFee</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="785757210%2FProperties%2F-1446683490" anchor-label="tollFee" id="785757210%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">통행 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="785757210%2FProperties%2F-1446683490" anchor-label="tollFee" id="785757210%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#785757210%2FProperties%2F-1446683490">tollFee</a></div><div class="brief "><a data-name="785757210%2FProperties%2F-1446683490" anchor-label="tollFee" id="785757210%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">통행 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -514,7 +523,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-644061517%2FProperties%2F-1446683490" anchor-label="totalFare" id="-644061517%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-644061517%2FProperties%2F-1446683490">totalFare</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-644061517%2FProperties%2F-1446683490" anchor-label="totalFare" id="-644061517%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">결제 요금 (원 단위).</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-644061517%2FProperties%2F-1446683490" anchor-label="totalFare" id="-644061517%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> <a href="index.html#-644061517%2FProperties%2F-1446683490">totalFare</a></div><div class="brief "><a data-name="-644061517%2FProperties%2F-1446683490" anchor-label="totalFare" id="-644061517%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">결제 요금 (원 단위).</p></div></div></div>
               </div>
             </div>
           </div>
@@ -529,7 +538,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1052933035%2FProperties%2F-1446683490" anchor-label="tripId" id="-1052933035%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1052933035%2FProperties%2F-1446683490">tripId</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1052933035%2FProperties%2F-1446683490" anchor-label="tripId" id="-1052933035%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행에 대한 고윳값.</p></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lcmdriver:dokkaHtml/release"><a data-name="-1052933035%2FProperties%2F-1446683490" anchor-label="tripId" id="-1052933035%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><div class="symbol monospace block"><span class="token keyword">private </span><span class="token keyword">final </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> <a href="index.html#-1052933035%2FProperties%2F-1446683490">tripId</a></div><div class="brief "><a data-name="-1052933035%2FProperties%2F-1446683490" anchor-label="tripId" id="-1052933035%2FProperties%2F-1446683490" data-filterable-set=":lcmdriver:dokkaHtml/release"></a><p class="paragraph">주행에 대한 고윳값.</p></div></div></div>
               </div>
             </div>
           </div>
