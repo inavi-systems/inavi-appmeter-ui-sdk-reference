@@ -136,6 +136,12 @@ $dokka.location:com.inavi.appmeter.ui.model/DailyStatus/getServiceDist/#/Pointin
 $dokka.location:com.inavi.appmeter.ui.model/DailyStatus/getServiceTime/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-daily-status/get-service-time.html
 $dokka.location:com.inavi.appmeter.ui.model/DriverInfo///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/index.html
 $dokka.location:com.inavi.appmeter.ui.model/DriverInfo/DriverInfo/#com.inavi.appmeter.ui.enums.TaxiType#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/-driver-info.html
+$dokka.location:com.inavi.appmeter.ui.model/DriverInfo/getBusinessNumber/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/get-business-number.html
+$dokka.location:com.inavi.appmeter.ui.model/DriverInfo/getId/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/get-id.html
+$dokka.location:com.inavi.appmeter.ui.model/DriverInfo/getLicenseNumber/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/get-license-number.html
+$dokka.location:com.inavi.appmeter.ui.model/DriverInfo/getPhoneNumber/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/get-phone-number.html
+$dokka.location:com.inavi.appmeter.ui.model/DriverInfo/getTaxiType/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/get-taxi-type.html
+$dokka.location:com.inavi.appmeter.ui.model/DriverInfo/getVehicleNumber/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-driver-info/get-vehicle-number.html
 $dokka.location:com.inavi.appmeter.ui.model/ExtraChargeState.Compound///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-extra-charge-state/-compound/index.html
 $dokka.location:com.inavi.appmeter.ui.model/ExtraChargeState.Compound/isActive/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-extra-charge-state/-compound/is-active.html
 $dokka.location:com.inavi.appmeter.ui.model/ExtraChargeState.Compound/isManual/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-extra-charge-state/-compound/is-manual.html
@@ -189,6 +195,8 @@ $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo/getEmptyCarDist/#/Pointi
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo/getTotalFare/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/get-total-fare.html
 $dokka.location:com.inavi.appmeter.ui.model/ServiceInfo///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-service-info/index.html
 $dokka.location:com.inavi.appmeter.ui.model/ServiceInfo/ServiceInfo/#com.inavi.appmeter.ui.enums.ServiceType#kotlin.String/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-service-info/-service-info.html
+$dokka.location:com.inavi.appmeter.ui.model/ServiceInfo/getDistrictCode/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-service-info/get-district-code.html
+$dokka.location:com.inavi.appmeter.ui.model/ServiceInfo/getType/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-service-info/get-type.html
 $dokka.location:com.inavi.appmeter.ui.model/TollgateInfo///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-tollgate-info/index.html
 $dokka.location:com.inavi.appmeter.ui.model/TollgateInfo/getName/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-tollgate-info/get-name.html
 $dokka.location:com.inavi.appmeter.ui.model/TollgateInfo/getTimeMillis/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-tollgate-info/get-time-millis.html
@@ -206,6 +214,9 @@ $dokka.location:com.inavi.appmeter.ui.model/TripInfo/isArrival/#/PointingToDecla
 $dokka.location:com.inavi.appmeter.ui.model/TripInfo/isPaymentComplete/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-trip-info/is-payment-complete.html
 $dokka.location:com.inavi.appmeter.ui.model/VehicleInfo///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-vehicle-info/index.html
 $dokka.location:com.inavi.appmeter.ui.model/VehicleInfo/VehicleInfo/#com.inavi.appmeter.ui.enums.VehicleType#com.inavi.appmeter.ui.enums.VehicleGrade#com.inavi.appmeter.ui.enums.VehicleEcoGrade/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-vehicle-info/-vehicle-info.html
+$dokka.location:com.inavi.appmeter.ui.model/VehicleInfo/getEcoGrade/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-vehicle-info/get-eco-grade.html
+$dokka.location:com.inavi.appmeter.ui.model/VehicleInfo/getGrade/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-vehicle-info/get-grade.html
+$dokka.location:com.inavi.appmeter.ui.model/VehicleInfo/getType/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-vehicle-info/get-type.html
 $dokka.location:com.inavi.appmeter.ui////PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui/index.html
 $dokka.location:com.inavi.appmeter.ui/AppMeterUiLibrary.Launcher.Companion///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui/-app-meter-ui-library/-launcher/-companion/index.html
 $dokka.location:com.inavi.appmeter.ui/AppMeterUiLibrary.Launcher///PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui/-app-meter-ui-library/-launcher/index.html
