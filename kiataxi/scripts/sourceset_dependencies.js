@@ -1,1 +1,1 @@
-sourceset_dependencies='{":kiataxi:dokkaHtml/androidTestRelease":[],":kiataxi:dokkaHtml/debug":[],":kiataxi:dokkaHtml/main":[],":kiataxi:dokkaHtml/release":[],":kiataxi:dokkaHtml/testFixtures":[],":kiataxi:dokkaHtml/testFixturesDebug":[],":kiataxi:dokkaHtml/testFixturesRelease":[]}'
+sourceset_dependencies='{":kiataxi:dokkaHtml/debug":[],":kiataxi:dokkaHtml/main":[],":kiataxi:dokkaHtml/release":[]}'
