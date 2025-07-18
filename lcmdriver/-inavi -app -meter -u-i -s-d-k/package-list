@@ -143,6 +143,7 @@ $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel///PointingToDecla
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getCallFee/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-call-fee.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getDrivingFare/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-driving-fare.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getEmptyCarDist/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-empty-car-dist.html
+$dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getEtcFee/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-etc-fee.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getLocationInfo/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-location-info.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getTollFee/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-toll-fee.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Cancel/getTotalFare/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-cancel/get-total-fare.html
@@ -156,6 +157,7 @@ $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getDrivingFare/#
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getDrivingTime/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-driving-time.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getEmptyCarDist/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-empty-car-dist.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getEndLocation/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-end-location.html
+$dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getEtcFee/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-etc-fee.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getPassedTollCount/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-passed-toll-count.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getStartLocation/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-start-location.html
 $dokka.location:com.inavi.appmeter.ui.model/PaymentInfo.Driving/getTollFee/#/PointingToDeclaration/-inavi -app -meter -u-i -s-d-k/com.inavi.appmeter.ui.model/-payment-info/-driving/get-toll-fee.html
